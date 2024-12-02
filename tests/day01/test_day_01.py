@@ -13,7 +13,7 @@ class TestDay01(unittest.TestCase):
     @parameterized.expand(
         [
             (os.path.join(ROOT_DIR, "test_day_01.txt"), 11),
-            (os.path.join(ROOT_DIR, "../../input/Day01.txt"), 1320851),
+            (os.path.join(ROOT_DIR, "../../input/day_01.txt"), 1320851),
         ]
     )
     def test_part_1(self, path, expected):
@@ -24,7 +24,7 @@ class TestDay01(unittest.TestCase):
     @parameterized.expand(
         [
             (os.path.join(ROOT_DIR, "test_day_01.txt"), 31),
-            (os.path.join(ROOT_DIR, "../../input/Day01.txt"), 26859182),
+            (os.path.join(ROOT_DIR, "../../input/day_01.txt"), 26859182),
         ]
     )
     def test_part_2(self, path, expected):
