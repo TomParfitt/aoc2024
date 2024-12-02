@@ -10,7 +10,7 @@ def sign(a):
 def check_line(line):
     prev_sign = 0
     for idx in range(1, len(line)):
-        prev = line[idx-1]
+        prev = line[idx - 1]
         curr = line[idx]
         delta = curr - prev
 
@@ -29,7 +29,7 @@ def check_line(line):
 
 
 def part_1(path):
-    with open(path, 'r') as file:
+    with open(path) as file:
         lines = [line.split() for line in file]
 
     safe = 0
@@ -42,7 +42,7 @@ def part_1(path):
 
 
 def part_2(path):
-    with open(path, 'r') as file:
+    with open(path) as file:
         lines = [line.split() for line in file]
 
     safe = 0
@@ -52,7 +52,7 @@ def part_2(path):
             safe += 1
         else:
             for idx in range(len(num_safe_line)):
-                if check_line(num_safe_line[:idx] + num_safe_line[idx+1:]):
+                if check_line(num_safe_line[:idx] + num_safe_line[idx + 1 :]):
                     safe += 1
                     break
 

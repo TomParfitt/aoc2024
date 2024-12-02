@@ -1,5 +1,5 @@
 def part_1(path):
-    with open(path, 'r') as file:
+    with open(path) as file:
         lines = [line.split() for line in file]
 
     team1 = []
@@ -20,7 +20,7 @@ def part_1(path):
 
 
 def part_2(path):
-    with open(path, 'r') as file:
+    with open(path) as file:
         lines = [line.split() for line in file]
 
     team1 = []
