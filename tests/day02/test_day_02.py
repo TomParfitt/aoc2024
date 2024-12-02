@@ -1,3 +1,4 @@
+import os
 import unittest
 
 from parameterized import parameterized
@@ -5,12 +6,14 @@ from parameterized import parameterized
 from aoc2024.Day02 import Day02
 
 
-class Day02Test(unittest.TestCase):
+class TestDay02(unittest.TestCase):
+
+    ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
     @parameterized.expand(
         [
-            ("Day02Test.txt", 2),
-            ("../../input/Day02.txt", 299),
+            (os.path.join(ROOT_DIR, "test_day_02.txt"), 2),
+            (os.path.join(ROOT_DIR, "../../input/Day02.txt"), 299),
         ]
     )
     def test_part_1(self, path, expected):
@@ -19,8 +22,8 @@ class Day02Test(unittest.TestCase):
 
     @parameterized.expand(
         [
-            ("Day02Test.txt", 4),
-            ("../../input/Day02.txt", 364),
+            (os.path.join(ROOT_DIR, "test_day_02.txt"), 4),
+            (os.path.join(ROOT_DIR, "../../input/Day02.txt"), 364),
         ]
     )
     def test_part_2(self, path, expected):
