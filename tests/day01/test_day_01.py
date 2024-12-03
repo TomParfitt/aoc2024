@@ -18,7 +18,6 @@ class TestDay01(unittest.TestCase):
     )
     def test_part_1(self, path, expected):
         result = Day01.part_1(path)
-
         self.assertEqual(expected, result)
 
     @parameterized.expand(
@@ -29,5 +28,4 @@ class TestDay01(unittest.TestCase):
     )
     def test_part_2(self, path, expected):
         result = Day01.part_2(path)
-
         self.assertEqual(expected, result)
