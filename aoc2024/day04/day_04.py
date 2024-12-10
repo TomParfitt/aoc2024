@@ -30,14 +30,14 @@ def part_1(path):
     word = "XMAS"
 
     directions = [
-        [-1, -1],
-        [0, -1],
-        [1, -1],
-        [-1, 0],
-        [1, 0],
-        [-1, 1],
-        [0, 1],
-        [1, 1],
+        [-1, -1],  # top left
+        [0, -1],  # above
+        [1, -1],  # top right
+        [-1, 0],  # left
+        [1, 0],  # right
+        [-1, 1],  # bottom left
+        [0, 1],  # below
+        [1, 1],  # bottom right
     ]
 
     for curr_y, line in enumerate(lines):
