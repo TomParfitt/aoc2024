@@ -3,7 +3,7 @@ import unittest
 
 from parameterized import parameterized
 
-from aoc2024.day05 import Day05
+from aoc2024.day05 import day_05
 
 
 class TestDay05(unittest.TestCase):
@@ -17,7 +17,7 @@ class TestDay05(unittest.TestCase):
         ]
     )
     def test_part_1(self, path, expected):
-        result = Day05.part_1(path)
+        result = day_05.part_1(path)
         self.assertEqual(expected, result)
 
     @parameterized.expand(
@@ -27,5 +27,5 @@ class TestDay05(unittest.TestCase):
         ]
     )
     def test_part_2(self, path, expected):
-        result = Day05.part_2(path)
+        result = day_05.part_2(path)
         self.assertEqual(expected, result)
